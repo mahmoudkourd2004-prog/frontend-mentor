@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fonts Awesome Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Steps</title>
+  </head>
+  <body>
+    <!-- Start header -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img width="196" height="28" src="images/logo-desktop.svg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0 gap-2">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle explore-btn"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  EXPLORE <i class="fa-solid fa-chevron-down arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><span><i class="fa-solid fa-route"></i></span>LEARNING
+                      PATHS</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><span><i class="fa-solid fa-laptop"></i></span
+                      >CHALLENGES</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><span><i class="fa-solid fa-code"></i></span>SOLUTIONS</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><span><i class="fa-solid fa-newspaper"></i></span
+                      >ARTICLES</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><span><i class="fa-solid fa-book"></i></span>GUIDES</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown companies-btn">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  FOR COMPANIS <i class="fa-solid fa-chevron-down arrow"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><span><i class="fa-solid fa-user-tie"></i></span>HIRE
+                      DEVELOPERS</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><span><i class="fa-solid fa-user-graduate"></i></span
+                      >TRAIN DEVELOPERS</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"
+                  >UNLOCK <span>PRO</span></a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline-success" type="submit">
+                LOG IN WITH GITHUB
+                <span><i class="fa-brands fa-github"></i></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End header -->
+    <!-- Start challenge -->
+    <div class="challenge-header">
+      <span>CHALLENGE</span>
+    </div>
+    <!-- End challenge -->
+    <!-- Start sterps -->
+    <div class="steps-container">
+      <div class="steps-toggle">Select Step ⬇</div>
+      <ul class="nav steps" id="stepsTab" role="tablist">
+        <li class="nav-item">
+          <button
+            class="step active"
+            data-bs-toggle="tab"
+            data-bs-target="#step1"
+          >
+            <span>STEP 1</span>
+            <h3>Start challenge</h3>
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button
+            class="step"
+            data-bs-toggle="tab"
+            data-bs-target="#step2"
+            onclick="changeText(2)"
+          >
+            <span>STEP 2</span>
+            <h3>Submit solution</h3>
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button
+            class="step"
+            data-bs-toggle="tab"
+            data-bs-target="#step2"
+            onclick="changeText(3)"
+          >
+            <span>STEP 3</span>
+            <h3>Improve solution</h3>
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button
+            class="step"
+            data-bs-toggle="tab"
+            data-bs-target="#step2"
+            onclick="changeText(4)"
+          >
+            <span>STEP 4</span>
+            <h3>Review solutions</h3>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <!-- End steps -->
+    <!-- Start content -->
+    <div class="tab-content">
+      <!-- Start Step1 -->
+      <!-- Start section 1 -->
+      <div class="tab-pane fade show active" id="step1">
+        <section class="challenge">
+          <div class="container">
+            <div class="left">
+              <div class="tags">
+                <span class="premium">PREMIUM</span>
+                <div class="span">
+                  <span class="html">HTML</span>
+                  <span class="css">CSS</span>
+                  <span class="js">JS</span>
+                </div>
+
+                <span class="level">
+                  <span class="square"></span>
+                  INTERMEDIATE
+                </span>
+              </div>
+
+              <h1>Recipe finder website</h1>
+
+              <p>
+                Build a responsive recipe finder with search, filtering, and
+                dynamic content. Practice working with JSON data, complex
+                layouts, and interactive JavaScript features.
+              </p>
+
+              <button class="start-btn">
+                START CHALLENGE <i class="fa-solid fa-lock"></i>
+              </button>
+
+              <p class="pro-text">
+                Premium challenges are available with <a href="#">Pro</a>.
+              </p>
+
+              <div class="people">
+                <i class="fa-solid fa-people-group"></i> Join 421 people who
+                have taken this challenge
+              </div>
+            </div>
+
+            <div class="right">
+              <img src="images/ygk0ltusrxjjp9dkxhab.webp" alt="design" />
+
+              <div class="design-buttons">
+                <span class="active">DESKTOP DESIGN</span>
+                <span>RECIPES DESIGN</span>
+                <span>TABLET DESIGN</span>
+                <span>MOBILE DESIGN</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Section 1 -->
+        <!-- Start Section 2 -->
+        <div class="container my-5">
+          <div class="row g-4">
+            <!-- LEFT CARD -->
+            <div class="col-lg-6">
+              <div class="card p-4 h-100 shadow-sm">
+                <h2 class="mb-3">📝 Brief</h2>
+
+                <p>
+                  Your challenge is to build out this recipe finder website and
+                  get it looking as close to the design as possible.
+                </p>
+
+                <p>
+                  You can use any tools you like to help you complete the
+                  challenge. If you have something you'd like to practice, feel
+                  free to give it a try
+                </p>
+
+                <p>Your users should be able to:</p>
+
+                <ul>
+                  <li>
+                    View the home, about, recipes index, and recipe detail pages
+                  </li>
+                  <li>Search for recipes by name or ingredient</li>
+                  <li>Filter recipes by max prep or cook time</li>
+                  <li>
+                    View the optimal layout for the interface depending on their
+                    device's screen size
+                  </li>
+                  <li>
+                    See hover and focus states for all interactive elements on
+                    the page
+                  </li>
+                </ul>
+
+                <p>
+                  Download the project and go through the <b>README.md</b> file.
+                  This will provide further details about the project and help
+                  you get set up.
+                </p>
+                <p>
+                  Want some support on the challenge?
+                  <a href="">Join our community</a> and ask questions in the
+                  help channel.
+                </p>
+              </div>
+            </div>
+            <!-- RIGHT SIDE -->
+            <div class="col-lg-6">
+              <div class="row g-4">
+                <!-- CARD 1 -->
+                <div class="col-12">
+                  <div class="card p-4 shadow-sm">
+                    <h2 class="mb-3">📦 Assets provided</h2>
+
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <i class="fa-solid fa-check"></i> Figma design files
+                      </li>
+                      <li class="mb-2">
+                        <i class="fa-solid fa-check"></i> Mobile, tablet &
+                        desktop layouts
+                      </li>
+                      <li class="mb-2">
+                        <i class="fa-solid fa-check"></i> Professional design
+                        system for colors, fonts, etc.
+                      </li>
+                      <li class="mb-2">
+                        <i class="fa-solid fa-check"></i> Optimized image assets
+                      </li>
+                      <li class="mb-2">
+                        <i class="fa-solid fa-check"></i> README file to help
+                        you get started
+                      </li>
+                      <li class="mb-2">
+                        <i class="fa-solid fa-check"></i> HTML file with
+                        pre-written content
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-12">
+                  <div class="card p-4 shadow-sm">
+                    <h2 class="mb-3">💡 Ideas to test yourself</h2>
+
+                    <ol>
+                      <li class="mb-2">
+                        Implement responsive images using the small and large
+                        image variations
+                      </li>
+
+                      <li class="mb-2">
+                        Create smooth page transitions and micro-interactions
+                        without heavy frameworks
+                      </li>
+
+                      <li class="mb-2">
+                        Update the data and add new filters (dietary
+                        restrictions, difficulty level, etc.)s
+                      </li>
+                      <li class="mb-2">
+                        Let users adjust serving sizes and automatically
+                        recalculate all ingredient quantities
+                      </li>
+                      <li class="mb-2">
+                        Allow visitors to save favorite recipes that persist
+                        between sessions
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Section 2 -->
+        <!-- Start Section 3 -->
+        <div class="faq">
+          <h2
+            class="font-bold font-primary tracking-widest uppercase text-center"
+          >
+            Challenge FAQs
+          </h2>
+          <div class="faq-item">
+            <button class="faq-question">
+              How can I get help if I'm stuck on a challenge?
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              The best (and quickest) way to get help on a challenge is in our
+              Discord server. There are thousands of other developers in there,
+              so it's a great place to ask questions. We even have a dedicated
+              "help" channel! If you haven't joined yet, you can
+              <a href="">get an invite to our Discord server here.</a>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              How do I submit my solution?
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              We'd recommend reading our
+              <a href="">complete guide to submitting solutions</a> . If you get
+              stuck and need help, please feel free to ask questions in our
+              Discord server, and we'll help you submit your project.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Is there an official solution I can take a look at?
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              We don't provide "official" solutions for the challenges. This is
+              because there is no single perfect way to complete a challenge.
+              Instead, you're encouraged to review other people's code in the
+              community. You can learn so much by seeing how other people have
+              approached the same challenges and giving them feedback.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Do I get a code review when I post my solution?
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              Frontend Mentor is a collaborative learning community where
+              everyone can give feedback to each other. If you'd like to receive
+              feedback from the community, please be sure to post a question
+              when you submit your solution. The more specific you can be, the
+              better. Being clear with your questions means you're much more
+              likely to receive valuable feedback from others.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I use libraries/frameworks on these projects?
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              Yes! Our challenges provide professional designs but there are no
+              rules on what tools to use. So feel free to use anything you like
+              to build your projects.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I use these projects in my portfolio?
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              Definitely! Please do feel free to use whatever you build in your
+              portfolio. Helping developers add professional-looking projects to
+              their portfolio was one of the reasons we created this platform!
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              How often are new challenges added?
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              We launch a new challenge every two weeks. We alternate between
+              free and premium challenge launches, so we launch one free and one
+              premium challenge each month.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              What is the difference between the desktop-design, mobile-design,
+              and desktop-preview images in my starter code?
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              The desktop-design and mobile-design images show you how the
+              layout should look at large and small screen sizes. The desktop
+              design is 1440px wide, and the mobile design is 375px. However,
+              try building projects to look good on all screen sizes. The
+              desktop-preview image is a preview image used in the README file.
+              You don’t need to reference this while building the project.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I use these challenges within my own free or commercial
+              content/tutorials/projects?
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              Please visit our <a href="">License</a> page to learn more about
+              how our challenges can be used within your own content. If you're
+              unsure about anything, please feel free to contact us at
+              <a href="">hi@frontendmentor.io</a>
+              and we'll be more than happy to answer your questions.
+            </div>
+          </div>
+        </div>
+        <!-- End Section 3 -->
+      </div>
+      <!-- End Step1 -->
+      <!-- Start Step 2 -->
+      <!-- STEP 2 -->
+      <div class="tab-pane fade" id="step2">
+        <div class="locked-section">
+          <div class="lock-icon">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+
+          <h2>This section is locked</h2>
+
+          <p id="lockedText">Start this challenge to submit a solution</p>
+
+          <button class="start-btn1" id="lockedBtn">START CHALLENGE</button>
+        </div>
+      </div>
+      <!-- End Step 4 -->
+    </div>
+    <!-- Start Section 4 -->
+    <section class="discord-section">
+      <img src="images/logo-discord.svg" class="discord-logo" />
+      <h4>JOIN OUR DISCORD COMMUNITY</h4>
+      <p>
+        Join thousands of Frontend Mentor community members taking the
+        challenges, sharing resources, helping each other, and chatting about
+        all things front-end!
+      </p>
+      <button class="discord-btn">JOIN OUR DISCORD</button>
+    </section>
+    <!-- End Section 4 -->
+    <!-- Start Section 5 -->
+    <footer class="footer">
+      <div class="logo">
+        <img src="images/logo-desktop.svg" alt="" />
+        <div>
+          <ul>
+            <li>
+              <a href=""><i class="fa-solid fa-mask"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-container">
+        <!-- LEFT SIDE -->
+        <div class="footer-left">
+          <h2>Stay up to date</h2>
+
+          <p>
+            with new challenges, featured solutions, selected articles, and our
+            latest news
+          </p>
+
+          <div class="subscribe">
+            <input type="email" placeholder="email@example.com" />
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="footer-links">
+          <div>
+            <h4>FRONTEND MENTOR</h4>
+            <a href="#">Unlock Pro</a>
+            <a href="#">Contact us</a>
+            <a href="#">FAQs</a>
+            <a href="#">Become a partner</a>
+            <a href="#">Use cases</a>
+          </div>
+
+          <div>
+            <h4>EXPLORE</h4>
+            <a href="#">Learning paths</a>
+            <a href="#">Challenges</a>
+            <a href="#">Solutions</a>
+            <a href="#">Articles</a>
+            <a href="#">Guides</a>
+          </div>
+
+          <div>
+            <h4>COMMUNITY</h4>
+            <a href="#">Discord</a>
+            <a href="#">Guidelines</a>
+          </div>
+
+          <div>
+            <h4>FOR COMPANIES</h4>
+            <a href="#">Hire developers</a>
+            <a href="#">Train developers</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© Frontend Mentor 2019 - 2026</p>
+
+        <div class="footer-policy">
+          <a href="#">Terms</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">License</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Section 5 -->
+    <!-- End content -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
