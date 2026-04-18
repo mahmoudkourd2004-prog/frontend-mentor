@@ -34,7 +34,7 @@ This project demonstrates UI components, layouts, and interactive elements using
 
 ## 🚀 Live Demo
 
-https://username.github.io/frontend-mentor/
+(https://mahmoudkourd2004-prog.github.io/frontend-mentor/)
 
 ---
 
